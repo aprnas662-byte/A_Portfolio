@@ -4,15 +4,21 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
 
-  // Important for GitHub Pages
+  // GitHub repository name
   base: '/A_Portfolio/',
 
   build: {
     chunkSizeWarningLimit: 900,
+
     rollupOptions: {
       output: {
         manualChunks: {
-          three: ['three', '@react-three/fiber', '@react-three/drei'],
+          three: [
+            'three',
+            '@react-three/fiber',
+            '@react-three/drei',
+          ],
+
           ui: [
             '@chakra-ui/react',
             '@emotion/react',
