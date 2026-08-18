@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [react()],
 
   // Important for GitHub Pages
-  base: '/Portfolio/',
+  base: '/A_Portfolio/',
 
   build: {
     chunkSizeWarningLimit: 900,
